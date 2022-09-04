@@ -302,6 +302,8 @@ int main ()
           /**
           * TODO (step 3): compute the steer error (error_steer) from the position and the desired trajectory
           **/
+         // Calculated the steer error as the difference between the desired and actual steer. Desired
+         // steer angle is derived from the path planner points and actual angle is given by 'yaw'.
           error_steer = angle_between_points(x_position, y_position, x_points.back(), y_points.back()) - yaw;
 
           /**
