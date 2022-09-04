@@ -330,10 +330,10 @@ int main ()
 
           // Compute error of speed
           double error_throttle;
-          /**
-          * TODO (step 2): compute the throttle error (error_throttle) from the position and the desired speed
-          **/
-          // modify the following line for step 2
+
+          // "Error is the speed difference between the actual speed and the desired speed"
+          // 'v_points.back()' returns the most recent desired speed and 'velocity' is the
+          // actual speed. The error is the difference between these two values.
           error_throttle = v_points.back() - velocity;
 
           double throttle_output;
